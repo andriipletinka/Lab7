@@ -12,6 +12,6 @@ import java.util.*;
 public class PaymentController {
     @GetMapping
     public List<? extends Payment> getPayments() {
-        return List.of(new PayPalPayment());
+        return List.of(new PayPalPaymentStrategy());
     }
 }
