@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @AllArgsConstructor @Setter @Getter
-public class FlowerPack {
+public class FlowerPack extends Item {
     private Flower flower;
     private int quantity;
 

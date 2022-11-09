@@ -1,5 +1,6 @@
 package com.example.lab7.flower;
 
+import com.example.lab7.flower.properties.FlowerType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,5 +19,11 @@ public class Flower
     private String color;
     private double sepalLength;
     private double price;
+    private FlowerType type;
 
+    public Flower(String color, double sepalLength, double price) {
+        this.setColor(color);
+        this.setSepalLength(sepalLength);
+        this.setPrice(price);
+    }
 }
