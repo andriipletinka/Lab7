@@ -7,8 +7,13 @@ import java.util.List;
 
 @Service
 public class FlowerService {
+
     @Autowired
     private FlowerRepository flowerRepository;
+
+    public FlowerService(FlowerRepository flowerRepository) {
+        this.flowerRepository = flowerRepository;
+    }
 
     public List<Flower> getFlowers() {
         return flowerRepository.findAll();

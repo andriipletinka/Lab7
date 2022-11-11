@@ -25,11 +25,4 @@ public class FlowerController {
     public void addFlower(@RequestBody Flower flower) {
         flowerService.addFlower(flower);
     }
-
-    @GetMapping
-    public List<FlowerPack> getFlower() {
-        List<FlowerPack> flowerPack = List.of(
-                new FlowerPack[]{new FlowerPack(new Flower("red", 2, 12), 5)});
-        return flowerPack;
-    }
 }

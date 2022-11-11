@@ -17,8 +17,8 @@ public class PaymentTest {
     }
 
     @Test
-    public void testDelivery() {
-        Assertions.assertEquals(PayPalPayment.pay(), true);
-        Assertions.assertEquals(CreditCardPayment.pay(), true);
+    public void testPayment() {
+        Assertions.assertTrue(PayPalPayment.pay());
+        Assertions.assertTrue(CreditCardPayment.pay());
     }
 }

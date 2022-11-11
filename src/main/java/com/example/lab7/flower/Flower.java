@@ -5,21 +5,20 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Bean;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter @Setter @AllArgsConstructor @Entity @Table @NoArgsConstructor
-public class Flower
-{
+public class Flower extends Item {
     @GeneratedValue @Id
     private int id;
     private String color;
     private double sepalLength;
     private double price;
+    @Enumerated(EnumType.STRING)
     private FlowerType type;
+    private final String description = "Flower";
 
     public Flower(String color, double sepalLength, double price) {
         this.setColor(color);

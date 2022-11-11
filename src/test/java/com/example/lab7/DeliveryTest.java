@@ -18,7 +18,7 @@ public class DeliveryTest {
 
     @Test
     public void testDelivery() {
-        Assertions.assertEquals(postDelivery.deliver(), true);
-        Assertions.assertEquals(DHLDelivery.deliver(), true);
+        Assertions.assertTrue(postDelivery.deliver());
+        Assertions.assertTrue(DHLDelivery.deliver());
     }
 }
