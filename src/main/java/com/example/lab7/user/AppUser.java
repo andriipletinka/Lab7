@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 @Getter @Setter @Table @Entity @NoArgsConstructor
-public class User {
+public class AppUser {
     @Id
     @GeneratedValue
     private int id;
