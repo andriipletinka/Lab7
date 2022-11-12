@@ -1,11 +1,10 @@
-GET http://localhost:8080/api/v1/flower
+GET https://enigmatic-temple-93184.herokuapp.com/api/v1/user
 
 ###
-POST http://localhost:8080/api/v1/flower
+POST https://enigmatic-temple-93184.herokuapp.com/api/v1/user
 Content-Type: application/json
 
 {
-  "sepalLength": 200,
-  "color": "red",
-  "price": 120
+  "email": "bob@gmail.com",
+  "dob": "2007-12-03"
 }

@@ -13,6 +13,7 @@ public class AppUser {
     @Id
     @GeneratedValue
     private int id;
+    @Column(unique = true)
     private String email;
     private LocalDate dob;
     @Transient
